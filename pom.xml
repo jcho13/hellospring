@@ -8,6 +8,8 @@
 	<packaging>war</packaging>
 	<properties>
 		<org.springframework-version>4.3.1.RELEASE</org.springframework-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	<profiles>
 		<profile>
@@ -94,7 +96,7 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<configuration>
-					<url>http://127.0.0.1/manager/text</url>
+					<url>http://127.0.0.1:8088/manager/text</url>
 					<path>/hellospring</path>
 					<username>admin</username>
 					<password>admin</password>
